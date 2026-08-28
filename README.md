@@ -64,7 +64,7 @@ All models were evaluated on a held-out 20% test set, with log-scale predictions
 ## How to Run
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/mitansh-shroff/diamond-price-regression-model-validation
 cd diamond-price-regression-model-validation
 pip install -r requirements.txt
 jupyter notebook diamond_price_prediction.ipynb
@@ -76,7 +76,7 @@ The dataset (`diamonds.csv`) is included in the repo, so the notebook runs immed
 
 - Only linear-family models (OLS, Ridge) were tested; a non-linear approach (polynomial terms, Random Forest, Gradient Boosting) might better capture the curvature seen at the high-carat extreme.
 - Evaluation used a single 80/20 train/test split; exact dollar figures could shift somewhat with a different split.
-- Ordinal encoding assumes equal spacing between quality grades (e.g. Fair→Good ≈ Premium→Ideal in effect), an assumption not directly tested against one-hot encoding.
+- Ordinal encoding assumes equhttps://github.com/mitansh-shroff/diamond-price-regression-model-validational spacing between quality grades (e.g. Fair→Good ≈ Premium→Ideal in effect), an assumption not directly tested against one-hot encoding.
 - The dataset itself is missing potentially relevant attributes (certification, fluorescence, market/region, timing) that could further improve or explain diamond pricing.
 
 See the notebook's Part 3 for the full discussion, including practical recommendations and what additional data would strengthen the analysis.
